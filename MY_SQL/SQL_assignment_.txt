@@ -1,0 +1,53 @@
+ Introduction to SQL its Importance in Data Analysis?
+
+SQL (Structured Query Language) is a standard language used to manage and manipulate relational databases. It is essential in data analysis because:
+
+It allows for efficient querying and filtering of large datasets.
+
+You can retrieve, update, insert, and delete data.
+
+Analysts use SQL to extract insights from data stored in relational databases.
+
+It's compatible with many data analysis tools and BI platforms.
+
+CREATE DATABASE CompanyDB;
+USE CompanyDB;
+
+USE companyDB;
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    Department VARCHAR(50),
+    Salary DECIMAL(10,2)
+
+
+ASSIGNMENT 2
+
+INSERT INTO Employees (FirstName, LastName, Age, Department, Salary)
+VALUES 
+('John', 'Doe', 35, 'Finance', 75000.00),
+('Jane', 'Smith', 28, 'Marketing', 62000.00),
+('Alice', 'Johnson', 42, 'HR', 70000.00),
+('Bob', 'Brown', 31, 'Finance', 68000.00),
+('Eve', 'Davis', 26, 'IT', 60000.00);
+
+SELECT * FROM Employees;
+SELECT FirstName, LastName, Salary FROM Employees;
+
+SELECT * FROM Employees
+WHERE Age > 30;
+
+SELECT * FROM Employees
+WHERE Department = 'Finance';
+
+SELECT * FROM Employees
+ORDER BY LastName ASC;
+
+SELECT * FROM Employees
+ORDER BY Salary DESC;
+
+
+
+    
